@@ -2,7 +2,7 @@
 // import { Link } from 'react-router-dom';
 
 
-const app_logo192 = "/logo246.png"
+const app_logo192 = "logo192.png"
 
 export default function Navbar(props) {
     const mode = props.mode
@@ -28,7 +28,7 @@ export default function Navbar(props) {
         <>
             <nav className={`navbar navbar-expand-lg bg-${mode} navbar-${mode}`}>
                 <div className="container-fluid">
-                    <img src={app_logo192} alt="Logo" width="30" height="24" className="d-inline-block align-text-top mx-2" />
+                    <img src={process.env.PUBLIC_URL + "/logo246.png"} alt="Logo" width="30" height="24" className="d-inline-block align-text-top mx-2" />
                     <a className="navbar-brand" href="/">{props.title}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
