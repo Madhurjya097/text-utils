@@ -2,7 +2,7 @@
 // import { Link } from 'react-router-dom';
 
 
-const app_logo192 = "logo192.png"
+// const app_logo192 = "logo192.png"
 
 export default function Navbar(props) {
     const mode = props.mode
@@ -23,6 +23,7 @@ export default function Navbar(props) {
         e.target.classList.add('active')
 
     }
+    console.log(process.env.PUBLIC_URL + "/logo246.png")
     // console.log(props)
     return (
         <>

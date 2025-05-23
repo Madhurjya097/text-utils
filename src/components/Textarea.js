@@ -68,7 +68,7 @@ export default function Textarea(props) {
             </div>
             <div className="container">
                 <h1>Analysis</h1>
-                <p>{text.length} characters entered with {" " + getTrueLength(text.split(" ")) + " "}
+                <p>{text.length} characters entered with {text.split(/\s+/).filter((val)=>{return val.length!==0}).length }{/*" " + getTrueLength(text.split(/\s+/)) + " "*/}
                     word(s)</p>
                 <h3>Preview</h3>
 
